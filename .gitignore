@@ -1,0 +1,94 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === Machine Learning / Data ===
+# Large data files
+*.csv
+*.tsv
+*.data
+*.dat
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.model
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# DVC or other data versioning systems
+.dvc/
+.dvcignore
+
+# TensorBoard logs
+logs/
+tensorboard/
+runs/
+tb_logs/
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+wandb-debug.log
+wandb-summary.json
+
+# Checkpoints
+checkpoints/
+*.ckpt
+*.pth
+
+# === IDEs and Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Environment and config ===
+.env
+*.env
+.env.*
+*.secret
+*.token
+
+# === Build & Dist ===
+build/
+dist/
+*.egg-info/
+*.eggs/
+*.manifest
+
+# === Docker ===
+*.log
+docker-compose.override.yml
+
+# === Mac/Linux/Windows OS ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+*.jpeg
+*.mp3

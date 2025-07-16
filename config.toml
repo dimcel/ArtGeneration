@@ -1,0 +1,45 @@
+# Music Visualizer Preprocessing Configuration
+
+[audio]
+# Audio processing settings
+sample_rate = 22050
+# Supported audio formats
+supported_formats = [".mp3", ".wav", ".flac", ".m4a", ".ogg"]
+
+[features]
+# Which features to extract (true/false)
+extract_tempo = true
+extract_energy = true
+extract_valence = false  # Disabled by default - needs better implementation
+extract_key = true
+extract_duration = true
+extract_spectral_brightness = true  # Mean spectral centroid
+
+[processing]
+# Audio analysis parameters
+tempo_detection_method = "beat_track"  # librosa method
+energy_frame_length = 2048
+energy_hop_length = 512
+
+# Key detection settings
+key_method = "chroma"  # or "simple" for basic version
+key_smooth_window = 5  # seconds to average over for more stable key detection
+
+# Spectral analysis
+spectral_window_size = 2048
+
+[output]
+# Output format preferences
+float_precision = 2  # decimal places for floats
+include_debug_info = false  # include processing metadata in output
+
+[validation]
+# File validation settings
+max_duration_minutes = 10  # Skip files longer than this
+min_duration_seconds = 5   # Skip files shorter than this
+check_file_integrity = true
+
+[spotify]
+# Spotify API settings (credentials go in .env file)
+search_limit = 1  # How many results to get
+timeout_seconds = 10
