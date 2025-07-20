@@ -1,0 +1,10 @@
+torch
+diffusers
+transformers
+accelerate
+librosa
+imageio[ffmpeg]
+requests
+python-dotenv
+tomli
+Pillow
